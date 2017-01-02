@@ -1,0 +1,40 @@
+# Blocks
+survey, V000
+clusterId, V001
+# Basic
+sampleWeight, V005
+age, V012
+ageGroup, V013
+urRural, V025
+edu, V106
+religion, V130, S132
+mediaNpMg, V157
+mediaRadio, V158
+mediaTv, V159
+wealthIndex, V190
+wealth, V191
+maritalStat, V501
+recentSex, V536
+job, V714
+heardHIV, V751
+knowledgeCondomsProtect, V754CP
+knowledgeLessPartnerProtect, V754DP
+knowledgeHealthyGetAids, V756
+# response (risk behaviors)
+condom, V761
+partnerYear, V766B
+whoLastSex, V767A
+partnerLife, V836
+# predictors
+MC, FG103, S448, S625, S720, S737, S748, S801, V483 
+# For S625:
+#It’s Circumcised in mz4
+# but "Where did you go for the injection the last time?" in tz4
+# and "Ever gotten \"drunk\"" in ls4
+# For S737:
+# It's "Circumcised" in MW4
+# "Not married men should have sex with only one partner" in rw5
+ageMC, V483A, S802, S805A, S805D
+# S805A is "Person who administered last health injection" in UG6 (where ageMC is V483A), but ageMC in MW5
+# anyProtection, V754Z is only available in pre-2007 surveys
+# ethni, V131

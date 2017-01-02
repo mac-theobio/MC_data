@@ -1,0 +1,1 @@
+The idea is to share "selected" data sets in a Dropbox. Not clear whether it's necessary. Maybe try first to work in a parallel version of Circumcision and Behaviour, since it has so much working stuff already.
