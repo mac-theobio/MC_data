@@ -43,7 +43,7 @@ df/mw6.Rout: convert/Malawi_VI.DHS.V.men.Rout
 df/mz4.Rout: convert/Mozambique_IV.DHS.IV.men.Rout
 df/mz6.Rout: convert/Mozambique_VI.DHS.VI.men.Rout
 df/nm5.Rout: convert/Namibia_V.DHS.V.men.Rout
-df/nm5.Rout: convert/Namibia_V.DHS.V.men.Rout
+df/nm6.Rout: convert/Namibia_VI.DHS.VI.men.Rout
 df/rw5.Rout: convert/Rwanda_V.DHS.IV.men.Rout
 df/rw6.Rout: convert/Rwanda_VI.DHS.VI.men.Rout
 df/tz4.Rout: convert/Tanzania_IVa.DHS.IV.men.Rout
