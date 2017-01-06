@@ -1,1 +1,5 @@
+<<<<<<< 1308fd6855f1f39ba928435d3a7c262adcda1de4
 Bad directory nomenclature, and lots of unnecessary pointers. But it's working for now.
+=======
+## Weirdness with the drop linking. Maybe need more specific link rules.
+>>>>>>> Autocommit (MC_data)
