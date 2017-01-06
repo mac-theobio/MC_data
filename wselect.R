@@ -1,9 +1,16 @@
 cat("##############################################\n")
 print(rtargetname)
 cat("##############################################\n")
- 
+
 raw <- readLines(input_files[[1]])
 sel <- grep("^[^#]", raw, value=TRUE)
+
+if(!exists("Answers")){
+	stop(paste0(
+		"There is no data set associated with target "
+		, rtargetname
+	))
+}
  
 NewAnswers <- data.frame(row.names=row.names(Answers))
 NewQuestions <- character(0)

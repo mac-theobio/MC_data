@@ -26,7 +26,8 @@ convert: DHS_convert_drop
 	$(forcelink)
 
 Sources += select.csv
-df/%.Rout: select.csv wselect.R df
+df/%.Rout: select.csv wselect.R 
+	$(MAKE) df
 	$(run-R)
 
 df: mc_data_files_drop
@@ -49,16 +50,19 @@ df/rw5.Rout: convert/Rwanda_V.DHS.IV.men.Rout
 df/rw6.Rout: convert/Rwanda_VI.DHS.VI.men.Rout
 df/tz4.Rout: convert/Tanzania_IVa.DHS.IV.men.Rout
 df/tz6.Rout: convert/Tanzania_VI.DHS.V.men.Rout
+df/tz7.Rout: convert/Tanzania_VII.DHS.VII.men.Rout
 df/zm5.Rout: convert/Zambia_V.DHS.V.men.Rout
 df/zm6.Rout: convert/Zambia_VI.DHS.VI.men.Rout
 df/zw5.Rout: convert/Zimbabwe_V.DHS.V.men.Rout
 df/zw6.Rout: convert/Zimbabwe_VI.DHS.VI.men.Rout
 df/zw7.Rout: convert/Zimbabwe_VII.DHS.VII.men.Rout
+df/ug5.Rout: convert/Uganda_V.DHS.V.men.Rout
+df/ug6.Rout: convert/Uganda_VI.DHS.VI.men.Rout
 
 # Older Malawi; not used
 # convert/Malawi_IVb.DHS.IV.men.Rout: convert/mwmr41fl.sav
 
-sets = ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw7 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7
+sets = ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7 tz7
 
 download: $(sets:%=df/%.Rout)
 
