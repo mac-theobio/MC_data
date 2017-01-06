@@ -8,7 +8,7 @@ target pngtarget pdftarget vtarget acrtarget: download
 
 # make files
 
-Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
+Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.txt
 Sources += standard.local
 include stuff.mk
 # include $(ms)/perl.def
