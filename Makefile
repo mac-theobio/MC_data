@@ -48,6 +48,7 @@ df/nm5.Rout: convert/Namibia_V.DHS.V.men.Rout
 df/nm6.Rout: convert/Namibia_VI.DHS.VI.men.Rout
 df/rw5.Rout: convert/Rwanda_V.DHS.IV.men.Rout
 df/rw6.Rout: convert/Rwanda_VI.DHS.VI.men.Rout
+df/rw7.Rout: convert/Rwanda_VII.DHS.VI.men.Rout
 df/tz4.Rout: convert/Tanzania_IVa.DHS.IV.men.Rout
 df/tz6.Rout: convert/Tanzania_VI.DHS.V.men.Rout
 df/tz7.Rout: convert/Tanzania_VII.DHS.VII.men.Rout
@@ -62,7 +63,7 @@ df/ug6.Rout: convert/Uganda_VI.DHS.VI.men.Rout
 # Older Malawi; not used
 # convert/Malawi_IVb.DHS.IV.men.Rout: convert/mwmr41fl.sav
 
-sets = ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7 tz7
+sets = ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 rw7 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7 tz7
 
 download: $(sets:%=df/%.Rout)
 
