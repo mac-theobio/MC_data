@@ -13,6 +13,7 @@ mediaRadio, V158
 mediaTv, V159
 wealthIndex, V190
 wealth, V191
+MCprovider, V483B
 maritalStat, V501
 recentSex, V536
 job, V714
@@ -20,6 +21,7 @@ heardHIV, V751
 knowledgeCondomsProtect, V754CP
 knowledgeLessPartnerProtect, V754DP
 knowledgeHealthyGetAids, V756
+mcHIV, SM707A
 # response (risk behaviors)
 condom, V761
 partnerYear, V766B
