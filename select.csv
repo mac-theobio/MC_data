@@ -13,7 +13,6 @@ mediaRadio, V158
 mediaTv, V159
 wealthIndex, V190
 wealth, V191
-MCprovider, V483B
 maritalStat, V501
 recentSex, V536
 job, V714
@@ -21,7 +20,7 @@ heardHIV, V751
 knowledgeCondomsProtect, V754CP
 knowledgeLessPartnerProtect, V754DP
 knowledgeHealthyGetAids, V756
-mcHIV, SM707A
+mcHIV, S707A
 # response (risk behaviors)
 condom, V761
 partnerYear, V766B
@@ -29,6 +28,10 @@ whoLastSex, V767A
 partnerLife, V836
 # predictors
 MC, FG103, S448, S625, S720, S737, S748, S801, V483 
+MCprovider, V483B, S805B, S803
+MCtraditional, S805A
+MCMedical, S805C
+
 # For S625:
 #It’s Circumcised in mz4
 # but "Where did you go for the injection the last time?" in tz4
@@ -40,3 +43,4 @@ ageMC, V483A, S802, S805A, S805D
 # S805A is "Person who administered last health injection" in UG6 (where ageMC is V483A), but ageMC in MW5
 # anyProtection, V754Z is only available in pre-2007 surveys
 # ethni, V131
+
