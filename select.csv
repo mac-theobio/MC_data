@@ -27,7 +27,7 @@ partnerYear, V766B
 whoLastSex, V767A
 partnerLife, V836
 # predictors
-MC, FG103, S448, S625, S720, S737, S748, S801, V483 
+MC, FG103, S448, S748, S625, S720, S801, S737, V483 
 MCprovider, V483B, S805B, S803
 MCtraditional, S805A
 MCMedical, S805C
