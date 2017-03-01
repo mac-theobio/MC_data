@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: download 
+target pngtarget pdftarget vtarget acrtarget: selection.out 
 
 ##################################################################
 
@@ -68,6 +68,8 @@ sets = ke4 ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 rw7 tz4 tz6 ug5 ug6 zm5 z
 ### Download and convert all of the MC sets
 download: $(sets:%=df/%.Rout)
 
+selection.out: $(sets:%=df/%.Rout)
+	$(cat)
 ### Makestuff
 
 ## Change this name to download a new version of the makestuff directory

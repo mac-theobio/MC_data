@@ -1,0 +1,2311 @@
+> 
+> # Generated using wrapR file df/ke4.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/ke4"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "**  Selected:  S720 Are you circumcised"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                                                         <NA>
+MC                                                                   Are you circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/ke4.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/ke7.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/ke7"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "**  Selected:  S707A Know someone personally who has AIDS virus"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                           Know someone personally who has AIDS virus
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/ke7.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/ls4.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/ls4"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  S132 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "Did not find variable  condom, V761 in .csv"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "Multiple matches to  MC, FG103, S448, S748, S625, S720, S801, S737, V483  in .csv:"
+[1] "**  Selected:  S748 Are you circumcised"
+[1] "**  Not used:  S625 Ever gotten \"drunk\""
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                                              <NA>
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                                                         <NA>
+MC                                                                   Are you circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/ls4.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/ls7.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/ls7"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "**  Selected:  S707A Can AIDS be cured"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  S805B Age at traditional circumcision"
+[1] "**  Selected:  S805A Respondent traditionally circumcised"
+[1] "**  Selected:  S805C Respondent medically circumcised"
+[1] "Multiple matches to  ageMC, V483A, S802, S805A, S805D in .csv:"
+[1] "**  Selected:  V483A Age at circumcision"
+[1] "**  Not used:  S805A Respondent traditionally circumcised"
+[1] "**  Not used:  S805D Age at medical circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                                                    Can AIDS be cured
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                 Age at traditional circumcision
+MCtraditional                                                         Respondent traditionally circumcised
+MCMedical                                                                 Respondent medically circumcised
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/ls7.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/mw4.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/mw4"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "**  Selected:  S737 Circumcised"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                                                         <NA>
+MC                                                                           Circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/mw4.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/mw6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/mw6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partner"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sexual partners"
+[1] "**  Selected:  V483 Is respondent circumcised"
+[1] "**  Selected:  S805B Person who performed the circumcision"
+[1] "**  Selected:  S805A Age when circumcised"
+[1] "**  Selected:  S805C Place of circumcision"
+[1] "**  Selected:  S805A Age when circumcised"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                 Question
+survey                                                             Country code and phase
+clusterId                                                                  Cluster number
+sampleWeight                                                                Sample weight
+age                                                              Current age - respondent
+ageGroup                                                                Age 5-year groups
+urRural                                                        Type of place of residence
+edu                                                             Highest educational level
+religion                                                                         Religion
+mediaNpMg                                      Frequency of reading newspaper or magazine
+mediaRadio                                                Frequency of listening to radio
+mediaTv                                                  Frequency of watching television
+wealthIndex                                                                  Wealth index
+wealth                                             Wealth index factor score (5 decimals)
+maritalStat                                                        Current marital status
+recentSex                                                          Recent sexual activity
+job                                                          Respondent currently working
+heardHIV                                                               Ever heard of AIDS
+knowledgeCondomsProtect         Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partner
+knowledgeHealthyGetAids                                    Can a healthy person have AIDS
+mcHIV                                                                                <NA>
+condom                                                       Last intercourse used condom
+partnerYear                                  No. had sex including wife in last 12 months
+whoLastSex                                             Relationship with last sex partner
+partnerLife                                      Total lifetime number of sexual partners
+MC                                                              Is respondent circumcised
+MCprovider                                          Person who performed the circumcision
+MCtraditional                                                        Age when circumcised
+MCMedical                                                           Place of circumcision
+ageMC                                                                Age when circumcised
+> # Wrapped output file df/mw6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/mz4.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/mz4"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "**  Selected:  S625 Circumcised"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                                                         <NA>
+MC                                                                           Circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/mz4.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/mz6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/mz6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                                                                 <NA>
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/mz6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/nm5.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/nm5"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sexual partners"
+[1] "**  Selected:  V483 Is respondent circumcised"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                     Frequency of reading newspaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                     Total lifetime number of sexual partners
+MC                                                             Is respondent circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/nm5.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/nm6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/nm6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                                                                 <NA>
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/nm6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/rw5.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/rw5"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "Multiple matches to  MC, FG103, S448, S748, S625, S720, S801, S737, V483  in .csv:"
+[1] "**  Selected:  S801 Circumcised"
+[1] "**  Not used:  S737 Not married men should have sex with only one partner"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                                                         <NA>
+MC                                                                           Circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/rw5.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/rw6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/rw6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "**  Selected:  S707A Men reduce changes on AIDS by getting circumcised"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                    Men reduce changes on AIDS by getting circumcised
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/rw6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/rw7.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/rw7"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "**  Selected:  S707A Men reduce changes on AIDS by getting circumcised"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                    Men reduce changes on AIDS by getting circumcised
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/rw7.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/tz4.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/tz4"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "Multiple matches to  MC, FG103, S448, S748, S625, S720, S801, S737, V483  in .csv:"
+[1] "**  Selected:  FG103 Respondent circumcised"
+[1] "**  Not used:  S625 Where did you go for the injection the last time?"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                                                         <NA>
+MC                                                                Respondent circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/tz4.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/tz6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/tz6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "Did not find variable  religion, V130, S132 in .csv"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partner"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sexual partners"
+[1] "**  Selected:  V483 Is respondent circumcised"
+[1] "**  Selected:  S803 Who did circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  S802 Age when circumcision occured"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                 Question
+survey                                                             Country code and phase
+clusterId                                                                  Cluster number
+sampleWeight                                                                Sample weight
+age                                                              Current age - respondent
+ageGroup                                                                Age 5-year groups
+urRural                                                        Type of place of residence
+edu                                                             Highest educational level
+religion                                                                             <NA>
+mediaNpMg                                      Frequency of reading newspaper or magazine
+mediaRadio                                                Frequency of listening to radio
+mediaTv                                                  Frequency of watching television
+wealthIndex                                                                  Wealth index
+wealth                                             Wealth index factor score (5 decimals)
+maritalStat                                                        Current marital status
+recentSex                                                          Recent sexual activity
+job                                                          Respondent currently working
+heardHIV                                                               Ever heard of AIDS
+knowledgeCondomsProtect         Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partner
+knowledgeHealthyGetAids                                    Can a healthy person have AIDS
+mcHIV                                                                                <NA>
+condom                                                       Last intercourse used condom
+partnerYear                                  No. had sex including wife in last 12 months
+whoLastSex                                             Relationship with last sex partner
+partnerLife                                      Total lifetime number of sexual partners
+MC                                                              Is respondent circumcised
+MCprovider                                                           Who did circumcision
+MCtraditional                                                                        <NA>
+MCMedical                                                                            <NA>
+ageMC                                                       Age when circumcision occured
+> # Wrapped output file df/tz6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/ug5.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/ug5"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sexual partners"
+[1] "**  Selected:  V483 Is respondent circumcised"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                     Total lifetime number of sexual partners
+MC                                                             Is respondent circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/ug5.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/ug6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/ug6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "**  Selected:  S805A Person who administered last health injection"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Multiple matches to  ageMC, V483A, S802, S805A, S805D in .csv:"
+[1] "**  Selected:  V483A Age at circumcision"
+[1] "**  Not used:  S805A Person who administered last health injection"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                                                                 <NA>
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                Person who administered last health injection
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/ug6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/zm5.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/zm5"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sexual partners"
+[1] "**  Selected:  V483 Is respondent circumcised"
+[1] "**  Selected:  S803 Person who performed circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  S802 Age circumcised"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                     Total lifetime number of sexual partners
+MC                                                             Is respondent circumcised
+MCprovider                                             Person who performed circumcision
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                    Age circumcised
+> # Wrapped output file df/zm5.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/zm6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/zm6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "**  Selected:  S707A Perceived risk of getting HIV"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                                        Perceived risk of getting HIV
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/zm6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/zw5.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/zw5"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Sample weight"
+[1] "**  Selected:  V012 Current age - respondent"
+[1] "**  Selected:  V013 Age 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Highest educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newpaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Respondent currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce chances of AIDS by always using condoms during sex"
+[1] "**  Selected:  V754DP Reduce chance of AIDS: have 1 sex partner with no oth partnr"
+[1] "**  Selected:  V756 Can a healthy person have AIDS"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Last intercourse used condom"
+[1] "**  Selected:  V766B No. had sex including wife in last 12 months"
+[1] "**  Selected:  V767A Relationship with last sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sexual partners"
+[1] "**  Selected:  V483 Is respondent circumcised"
+[1] "Did not find variable  MCprovider, V483B, S805B, S803 in .csv"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "Did not find variable  ageMC, V483A, S802, S805A, S805D in .csv"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                Question
+survey                                                            Country code and phase
+clusterId                                                                 Cluster number
+sampleWeight                                                               Sample weight
+age                                                             Current age - respondent
+ageGroup                                                               Age 5-year groups
+urRural                                                       Type of place of residence
+edu                                                            Highest educational level
+religion                                                                        Religion
+mediaNpMg                                      Frequency of reading newpaper or magazine
+mediaRadio                                               Frequency of listening to radio
+mediaTv                                                 Frequency of watching television
+wealthIndex                                                                 Wealth index
+wealth                                            Wealth index factor score (5 decimals)
+maritalStat                                                       Current marital status
+recentSex                                                         Recent sexual activity
+job                                                         Respondent currently working
+heardHIV                                                              Ever heard of AIDS
+knowledgeCondomsProtect        Reduce chances of AIDS by always using condoms during sex
+knowledgeLessPartnerProtect Reduce chance of AIDS: have 1 sex partner with no oth partnr
+knowledgeHealthyGetAids                                   Can a healthy person have AIDS
+mcHIV                                                                               <NA>
+condom                                                      Last intercourse used condom
+partnerYear                                 No. had sex including wife in last 12 months
+whoLastSex                                            Relationship with last sex partner
+partnerLife                                     Total lifetime number of sexual partners
+MC                                                             Is respondent circumcised
+MCprovider                                                                          <NA>
+MCtraditional                                                                       <NA>
+MCMedical                                                                           <NA>
+ageMC                                                                               <NA>
+> # Wrapped output file df/zw5.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/zw6.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/zw6"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                                   Wealth index
+wealth                                                              Wealth index factor score (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                                                                                 <NA>
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/zw6.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/zw7.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/zw7"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "**  Selected:  V130 Religion"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index combined"
+[1] "**  Selected:  V191 Wealth index factor score combined (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "**  Selected:  V751 Ever heard of AIDS"
+[1] "**  Selected:  V754CP Reduce risk of getting HIV: always use condoms during sex"
+[1] "**  Selected:  V754DP Reduce risk of getting HIV: have 1 sex partner only, who has no other partners"
+[1] "**  Selected:  V756 A healthy looking person can have HIV"
+[1] "**  Selected:  S707A Men reduce chance of getting HIV by getting circumcised"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "**  Selected:  V766B Number of sex partners, including spouse, in last 12 months"
+[1] "**  Selected:  V767A Relationship with most recent sex partner"
+[1] "**  Selected:  V836 Total lifetime number of sex partners"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                                                  Question
+survey                                                                              Country code and phase
+clusterId                                                                                   Cluster number
+sampleWeight                                                              Men's sample weight (6 decimals)
+age                                                                                            Current age
+ageGroup                                                                              Age in 5-year groups
+urRural                                                                         Type of place of residence
+edu                                                                                      Educational level
+religion                                                                                          Religion
+mediaNpMg                                                       Frequency of reading newspaper or magazine
+mediaRadio                                                                 Frequency of listening to radio
+mediaTv                                                                   Frequency of watching television
+wealthIndex                                                                          Wealth index combined
+wealth                                                     Wealth index factor score combined (5 decimals)
+maritalStat                                                                         Current marital status
+recentSex                                                                           Recent sexual activity
+job                                                                                      Currently working
+heardHIV                                                                                Ever heard of AIDS
+knowledgeCondomsProtect                          Reduce risk of getting HIV: always use condoms during sex
+knowledgeLessPartnerProtect Reduce risk of getting HIV: have 1 sex partner only, who has no other partners
+knowledgeHealthyGetAids                                              A healthy looking person can have HIV
+mcHIV                                              Men reduce chance of getting HIV by getting circumcised
+condom                                                Condom used during last sex with most recent partner
+partnerYear                                    Number of sex partners, including spouse, in last 12 months
+whoLastSex                                                       Relationship with most recent sex partner
+partnerLife                                                          Total lifetime number of sex partners
+MC                                                                                  Respondent circumcised
+MCprovider                                                                  Who performed the circumcision
+MCtraditional                                                                                         <NA>
+MCMedical                                                                                             <NA>
+ageMC                                                                                  Age at circumcision
+> # Wrapped output file df/zw7.wrapR.rout
+> 
+> 
+> # Generated using wrapR file df/tz7.wrapR.r
+> source('wselect.R', echo=TRUE)
+
+> cat("##############################################\n")
+##############################################
+
+> print(rtargetname)
+[1] "df/tz7"
+
+> cat("##############################################\n")
+##############################################
+
+> raw <- readLines(input_files[[1]])
+
+> sel <- grep("^[^#]", raw, value = TRUE)
+
+> if (!exists("Answers")) {
++     stop(paste0("There is no data set associated with target ", 
++         rtargetname))
++ }
+
+> NewAnswers <- data.frame(row.names = row.names(Answers))
+
+> NewQuestions <- character(0)
+
+> for (s in sel) {
++     l <- scan(text = s, sep = ",", what = "character", strip.white = TRUE, 
++         quiet = TRUE)
++     new <- l[[1]]
++     if  .... [TRUNCATED] 
+[1] "**  Selected:  V000 Country code and phase"
+[1] "**  Selected:  V001 Cluster number"
+[1] "**  Selected:  V005 Men's sample weight (6 decimals)"
+[1] "**  Selected:  V012 Current age"
+[1] "**  Selected:  V013 Age in 5-year groups"
+[1] "**  Selected:  V025 Type of place of residence"
+[1] "**  Selected:  V106 Educational level"
+[1] "Did not find variable  religion, V130, S132 in .csv"
+[1] "**  Selected:  V157 Frequency of reading newspaper or magazine"
+[1] "**  Selected:  V158 Frequency of listening to radio"
+[1] "**  Selected:  V159 Frequency of watching television"
+[1] "**  Selected:  V190 Wealth index"
+[1] "**  Selected:  V191 Wealth index factor score (5 decimals)"
+[1] "**  Selected:  V501 Current marital status"
+[1] "**  Selected:  V536 Recent sexual activity"
+[1] "**  Selected:  V714 Currently working"
+[1] "Did not find variable  heardHIV, V751 in .csv"
+[1] "Did not find variable  knowledgeCondomsProtect, V754CP in .csv"
+[1] "Did not find variable  knowledgeLessPartnerProtect, V754DP in .csv"
+[1] "Did not find variable  knowledgeHealthyGetAids, V756 in .csv"
+[1] "Did not find variable  mcHIV, S707A in .csv"
+[1] "**  Selected:  V761 Condom used during last sex with most recent partner"
+[1] "Did not find variable  partnerYear, V766B in .csv"
+[1] "Did not find variable  whoLastSex, V767A in .csv"
+[1] "Did not find variable  partnerLife, V836 in .csv"
+[1] "**  Selected:  V483 Respondent circumcised"
+[1] "**  Selected:  V483B Who performed the circumcision"
+[1] "Did not find variable  MCtraditional, S805A in .csv"
+[1] "Did not find variable  MCMedical, S805C in .csv"
+[1] "**  Selected:  V483A Age at circumcision"
+
+> Answers <- NewAnswers
+
+> Questions <- NewQuestions
+
+> print(data.frame(Question = Questions))
+                                                                        Question
+survey                                                    Country code and phase
+clusterId                                                         Cluster number
+sampleWeight                                    Men's sample weight (6 decimals)
+age                                                                  Current age
+ageGroup                                                    Age in 5-year groups
+urRural                                               Type of place of residence
+edu                                                            Educational level
+religion                                                                    <NA>
+mediaNpMg                             Frequency of reading newspaper or magazine
+mediaRadio                                       Frequency of listening to radio
+mediaTv                                         Frequency of watching television
+wealthIndex                                                         Wealth index
+wealth                                    Wealth index factor score (5 decimals)
+maritalStat                                               Current marital status
+recentSex                                                 Recent sexual activity
+job                                                            Currently working
+heardHIV                                                                    <NA>
+knowledgeCondomsProtect                                                     <NA>
+knowledgeLessPartnerProtect                                                 <NA>
+knowledgeHealthyGetAids                                                     <NA>
+mcHIV                                                                       <NA>
+condom                      Condom used during last sex with most recent partner
+partnerYear                                                                 <NA>
+whoLastSex                                                                  <NA>
+partnerLife                                                                 <NA>
+MC                                                        Respondent circumcised
+MCprovider                                        Who performed the circumcision
+MCtraditional                                                               <NA>
+MCMedical                                                                   <NA>
+ageMC                                                        Age at circumcision
+> # Wrapped output file df/tz7.wrapR.rout
+> 
