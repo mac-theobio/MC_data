@@ -63,13 +63,14 @@ df/ug6.Rout: convert/Uganda_VI.DHS.VI.men.Rout
 # Older Malawi; not used
 # convert/Malawi_IVb.DHS.IV.men.Rout: convert/mwmr41fl.sav
 
-sets = ke4 ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 rw7 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7 tz7
+sets = ke4 ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 rw7 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7
 
 ### Download and convert all of the MC sets
 download: $(sets:%=df/%.Rout)
 
 selection.out: $(sets:%=df/%.Rout)
 	$(cat)
+
 ### Makestuff
 
 ## Change this name to download a new version of the makestuff directory
