@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: selection.out 
+target pngtarget pdftarget vtarget acrtarget: convert_code 
 
 ##################################################################
 
@@ -12,7 +12,7 @@ Sources = Makefile .gitignore README.md stuff.mk LICENSE.md notes.txt
 Sources += standard.local
 include stuff.mk
 # include $(ms)/perl.def
-include $(ms)/git.def
+-include $(ms)/git.def
 
 ##################################################################
 
@@ -20,8 +20,11 @@ include $(ms)/git.def
 
 Sources += $(wildcard *.R)
 
-convert/%: convert DHS_convert
-	cd DHS_convert && $(MAKE) convert/$*
+convert_code:
+	git submodule add git@github.com:mac-theobio/DHS_convert.git $@
+
+convert_files/%:
+	cd convert_code && $(MAKE) convert_files/$*
 
 convert: DHS_convert_drop
 	$(forcelink)

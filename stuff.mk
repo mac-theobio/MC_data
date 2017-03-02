@@ -1,15 +1,10 @@
-msrepo = https://github.com/dushoff
-gitroot = ./gitroot
-export ms = $(gitroot)/makestuff
 Drop = ./Dropbox
-
 -include local.mk
--include $(gitroot)/local.mk
-export ms = $(gitroot)/makestuff
+export ms = ./makestuff
 -include $(ms)/os.mk
 
-Makefile: $(ms) $(subdirs)
+makestuff:
+	git submodule add git@github.com:dushoff/$@.git $@
 
-$(ms):
-	- mkdir $(gitroot)
-	cd $(dir $(ms)) && git clone $(msrepo)/$(notdir $(ms)).git
+%.local.link: %.local
+	$(LN) $< local.mk

@@ -1,0 +1,6 @@
+[submodule "makestuff"]
+	path = makestuff
+	url = git@github.com:dushoff/makestuff.git
+[submodule "convert_code"]
+	path = convert_code
+	url = git@github.com:mac-theobio/DHS_convert.git
