@@ -36,6 +36,7 @@ df: mc_data_files_drop
 ######################################################################
 
 ## Sets and short names
+## These rules are made by browsing ~/git/DHS_overview/standard.files.mk
 df/ke4.Rout: convert/Kenya_IV.DHS.IV.men.Rout
 df/ke7.Rout: convert/Kenya_VII.DHS.VI.men.Rout
 df/ls4.Rout: convert/Lesotho_IV.DHS.IV.men.Rout
