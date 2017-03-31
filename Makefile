@@ -19,6 +19,8 @@ include stuff.mk
 
 Sources += $(wildcard *.R)
 
+## Convert is the Dropbox where we keep basic, converted data sets
+## DHS_convert are the JD rules for converting them
 convert/%: convert DHS_convert
 	cd DHS_convert && $(MAKE) convert/$*
 
