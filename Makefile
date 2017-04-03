@@ -45,6 +45,7 @@ df/ls4.Rout: convert/Lesotho_IV.DHS.IV.men.Rout
 df/ls7.Rout: convert/Lesotho_VII.DHS.VI.men.Rout
 df/mw4.Rout: convert/Malawi_IVa.DHS.IV.men.Rout
 df/mw6.Rout: convert/Malawi_VI.DHS.V.men.Rout
+df/mw7.Rout: convert/Malawi_VII.DHS.VII.men.Rout
 df/mz4.Rout: convert/Mozambique_IV.DHS.IV.men.Rout
 df/mz6.Rout: convert/Mozambique_VI.DHS.VI.men.Rout
 df/nm5.Rout: convert/Namibia_V.DHS.V.men.Rout
@@ -66,7 +67,7 @@ df/ug6.Rout: convert/Uganda_VI.DHS.VI.men.Rout
 # Older Malawi; not used
 # convert/Malawi_IVb.DHS.IV.men.Rout: convert/mwmr41fl.sav
 
-sets = ke4 ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 rw7 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7
+sets = ke4 ke7 ls4 ls7 mw4 mw6 mz4 mz6 nm5 nm6 rw5 rw6 rw7 tz4 tz6 ug5 ug6 zm5 zm6 zw5 zw6 zw7 mw7
 
 ### Download and convert all of the MC sets
 download: $(sets:%=df/%.Rout)
