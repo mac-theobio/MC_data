@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: selection.out 
+target pngtarget pdftarget vtarget acrtarget: convert/Lesotho_VII.DHS.VI.men.Rout 
 
 ##################################################################
 

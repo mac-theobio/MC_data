@@ -1,6 +1,7 @@
 # Blocks
 survey, V000
 clusterId, V001
+interviewYear, V007
 # Basic
 sampleWeight, V005
 age, V012
