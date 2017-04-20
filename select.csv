@@ -33,6 +33,8 @@ MCprovider, V483B, S805B, S803
 MCtraditional, S805A
 MCMedical, S805C
 
+# Variabkles to consider:
+# MCReduceHIV, S707A
 # For S625:
 #It’s Circumcised in mz4
 # but "Where did you go for the injection the last time?" in tz4
