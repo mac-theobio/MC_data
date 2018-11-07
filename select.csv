@@ -24,8 +24,12 @@ knowledgeHealthyGetAids, V756
 mcHIV, S707A
 # response (risk behaviors)
 condom, V761
+condom2, V761B
+condom3, V761C
 partnerYear, V766B
 whoLastSex, V767A
+whoLastSex2, V767B
+whoLastSex3, V767C
 partnerLife, V836
 # predictors
 MC, FG103, S448, S748, S625, S720, S801, S737, V483 
