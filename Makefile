@@ -1,8 +1,8 @@
 # MC_data
 ### Hooks for the editor to set the default target
-current: target
 
-target pngtarget pdftarget vtarget acrtarget: convert/Lesotho_VII.DHS.VI.men.Rout 
+current: target
+-include target.mk
 
 ##################################################################
 
@@ -21,8 +21,7 @@ Sources += $(wildcard *.R)
 
 ## Convert is the Dropbox where we keep basic, converted data sets
 ## DHS_convert are the JD rules for converting them
-convert/%: convert DHS_convert
-	cd DHS_convert && $(MAKE) convert/$*
+## convert/%: convert DHS_convert; cd DHS_convert && $(MAKE) convert/$*
 
 convert: DHS_convert_drop
 	$(forcelink)
@@ -81,7 +80,7 @@ selection.out: $(sets:%=df/%.Rout)
 # Makefile: start.makestuff
 
 -include $(ms)/git.mk
--include $(ms)/linkdirs.mk
+# -include $(ms)/linkdirs.mk
 -include $(ms)/visual.mk
 
 -include $(ms)/wrapR.mk
